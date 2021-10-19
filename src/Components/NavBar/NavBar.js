@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Dropdown, Nav, Navbar } from 'react-bootstrap';
+import { Container, Nav, Navbar } from 'react-bootstrap';
 import { Link, NavLink } from 'react-router-dom';
 import useAuth from '../../context/useAuth';
 import placeholder from './placeholder.jpg'

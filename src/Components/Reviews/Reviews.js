@@ -53,7 +53,7 @@ const Reviews = () => {
             <h2 className="fs-1 fw-bold mt-5 mb-4 text-info text-uppercase">What Our Client’s Say</h2>
 
             <Slider {...settings}>
-                {Array.from({ length: 5 }).map((_, idx) => (
+                {Array.from({ length: 1 }).map((_, idx) => (
                     items?.map(item => item?.section === 'reviews' &&
                         <div className="mb-3 p-2 p-md-3">
                             <div className=" bg-light p-4 border border-2 border-secondary shadow" style={{ borderRadius: '19px' }}>

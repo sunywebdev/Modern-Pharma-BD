@@ -11,19 +11,15 @@ const NewsDetails = () => {
         <Container className='mt-2'>
             {items?.map(item => item?.id === itemID &&
                 <>
-                    <div className="row flex-lg-row-reverse align-items-center g-5">
-                        <div className="col-md-6 text-start">
-                            <div className="row">
-                                <div className="col"><i className="fas fa-user-alt text-primary"></i> &nbsp; {item?.by}</div>
-                                <div className="col"><i className="fas fa-calendar-alt text-primary"></i> &nbsp; {item?.time}</div>
-                                <div className="col"><i className="fas fa-folder text-primary"></i> &nbsp; {item?.folder}</div>
-                            </div>
-                            <h2 className='fw-bold py-3'>{item?.headline}</h2>
-                            <p className='text-secondary'>{item?.details}</p>
+                    <h2 className='fw-bold py-3 mt-2 text-info'>{item?.headline}</h2>
+                    <div class="clearfix">
+                        <img src={item?.photo} class="col-md-4 mb-2 mx-md-3 rounded float-sm-start w-50" alt="..." />
+                        <div className="row gx-0 pb-3">
+                            <div className="col"><i className="fas fa-user-alt text-primary"></i> &nbsp; {item?.by}</div>
+                            <div className="col"><i className="fas fa-calendar-alt text-primary"></i> &nbsp; {item?.time}</div>
+                            <div className="col"><i className="fas fa-folder text-primary"></i> &nbsp; {item?.folder}</div>
                         </div>
-                        <div className="col-md-6">
-                            <img src={item?.photo} className="d-block mx-lg-auto img-fluid w-100" alt="" loading="lazy" />
-                        </div>
+                        <p className='text-secondary text-start'>{item?.details}</p>
                     </div>
                 </>
 

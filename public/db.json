@@ -134,28 +134,28 @@
     {
         "section": "team",
         "id": "101",
-        "name": "Dr. John Doe",
+        "name": "Dr. Brian Bowling",
         "title": "Medical Director",
         "photo": "/photos/team1.jpg"
     },
     {
         "section": "team",
         "id": "102",
-        "name": "Dr. John Doe",
+        "name": "Dr. Kenneth Hale",
         "title": "Medical Director",
         "photo": "/photos/team2.jpg"
     },
     {
         "section": "team",
         "id": "103",
-        "name": "Dr. John Doe",
+        "name": "Dr. Aaron Weir",
         "title": "Medical Director",
         "photo": "/photos/team3.jpg"
     },
     {
         "section": "team",
         "id": "104",
-        "name": "Dr. John Doe",
+        "name": "Dr. Shawn Cole",
         "title": "Medical Director",
         "photo": "/photos/team4.jpg"
     },
@@ -164,60 +164,60 @@
         "id": "201",
         "photo": "/photos/news1.webp",
         "by": "John Doe",
-        "time": "24 May 2021",
-        "headline": "Kitchen inspired on Japanese",
-        "details": "The microscope is a device for viewing objects that are too small to be observed with the naked eye. In the healthcare industry, it is used in laboratories to make diagnoses from biopsies or other biological sample preparations. Microscopes are usually a lens system that magnifies the object under observation. There are also examination and/or surgical microscopes used to magnify an area of the body so the doctor or surgeon can work more accurately. But these are not dealt with in this buying guide as they are part of the field of surgical microscopy.The microscope is a device for viewing objects that are too small to be observed with the naked eye. In the healthcare industry, it is used in laboratories to make diagnoses from biopsies or other biological sample preparations. Microscopes are usually a lens system that magnifies the object under observation. There are also examination and/or surgical microscopes used to magnify an area of the body so the doctor or surgeon can work more accurately. But these are not dealt with in this buying guide as they are part of the field of surgical microscopy."
+        "time": "24 May 21",
+        "headline": "The prospects for Pharmacy",
+        "details": "We are now on the final approach to the 21 Welsh election. The election campaigns are in full swing and the key political parties have revealed their intentions to shape public services should they be elected to form the next Welsh Government. Unsurprisingly, the impact of the pandemic has fuelled new plans for transformation and recovery for the NHS in Wales. This is a common denominator in each of the party manifestos but each has their own unique view. Each party has recognised how the pandemic has illuminated both positive aspects of our care system and areas that need significant attention and reform. So what do the party manifestos reveal for pharmacy and the benefits patients can expect from pharmacy services in the future in Wales? Prospects for pharmacy We are pleased that the commitments of each of the three main parties will impact positively upon pharmacy and patients using pharmacy services.   This provides some welcome reassurance that whichever party or parties form the next Welsh Government, pharmacy will be included their plans. So what are the parties committing to that will be of interest to the pharmacy profession?"
     },
     {
         "section": "news",
         "id": "202",
-        "photo": "/photos/news1.webp",
+        "photo": "/photos/news2.webp",
         "by": "John Doe",
-        "time": "24 May 2021",
+        "time": "24 May 21",
         "folder": "News",
-        "headline": "Kitchen inspired on Japanese",
-        "details": "The microscope is a device for viewing objects that are too small to be observed with the naked eye. In the healthcare industry, it is used in laboratories to make diagnoses from biopsies or other biological sample preparations. Microscopes are usually a lens system that magnifies the object under observation. There are also examination and/or surgical microscopes used to magnify an area of the body so the doctor or surgeon can work more accurately. But these are not dealt with in this buying guide as they are part of the field of surgical microscopy.The microscope is a device for viewing objects that are too small to be observed with the naked eye. In the healthcare industry, it is used in laboratories to make diagnoses from biopsies or other biological sample preparations. Microscopes are usually a lens system that magnifies the object under observation. There are also examination and/or surgical microscopes used to magnify an area of the body so the doctor or surgeon can work more accurately. But these are not dealt with in this buying guide as they are part of the field of surgical microscopy."
+        "headline": "RPS Elections",
+        "details": "As people start to think about who to vote for in this year’s election to the RPS National Pharmacy Boards in England, Scotland and Wales it’s worth bearing in mind that we are talking about passionate pharmacists who want to make a positive difference to the profession. All will have ideas about how and what should be a priority for RPS, what policies would have the greatest impact and what areas should be a focus. Artificial intelligence, COVID-19, NHS policy and changes in the law are all likely to be in the mix, and all of us will have an opinion about what to prioritise. This year we also want to make sure we are encouraging everyone to be part of our mission, to put pharmacy on the forefront of healthcare. We want to encourage people to lend their vote to the candidate they believe in. This year we’ve been absolutely delighted with the number and diversity of candidates standing for election – members from a range of sectors, as well people from different backgrounds and with different types of pharmacy experience has stepped up – thank you to everyone who has put themselves forward for election. We’re learning from previous experience about online debates, or ‘hustings’.  What we have seen is either low participation, (webinars), or quite high participation but frankly a chaotic and unpleasant experience. This year we are leaving it up to you to engage with candidates on the forum, you and they choose. That could be through pharmaceuticaljournal.com, or any number of social media platforms, Whatsapp, Instagram or Twitter. Or you may want to speak to members at your place of work. We know passions can run high, and people do have strong views and feelings – we’d like to remind everyone that social media is a very public forum. Before you post something, please do think about whether you’d be comfortable saying that face to face to someone in the real world – if not then maybe step away from the keyboard and take some time out to reconsider. We’re not forcing anyone to use a platform or channel that you are neither familiar, or comfortable with, although the advice to RPS Board candidates is reach out to voters however and wherever you can. For the rest of us not ready to become a board candidate but keen to get involved with the election, how you participate will be a personal choice, but why not direct your energy to supporting the candidate you believe in rather than the ones you don’t?"
     },
     {
         "section": "news",
         "id": "203",
-        "photo": "/photos/news1.webp",
+        "photo": "/photos/news3.webp",
         "by": "John Doe",
-        "time": "24 May 2021",
+        "time": "24 May 21",
         "folder": "News",
-        "headline": "Kitchen inspired on Japanese",
-        "details": "The microscope is a device for viewing objects that are too small to be observed with the naked eye. In the healthcare industry, it is used in laboratories to make diagnoses from biopsies or other biological sample preparations. Microscopes are usually a lens system that magnifies the object under observation. There are also examination and/or surgical microscopes used to magnify an area of the body so the doctor or surgeon can work more accurately. But these are not dealt with in this buying guide as they are part of the field of surgical microscopy.The microscope is a device for viewing objects that are too small to be observed with the naked eye. In the healthcare industry, it is used in laboratories to make diagnoses from biopsies or other biological sample preparations. Microscopes are usually a lens system that magnifies the object under observation. There are also examination and/or surgical microscopes used to magnify an area of the body so the doctor or surgeon can work more accurately. But these are not dealt with in this buying guide as they are part of the field of surgical microscopy."
+        "headline": "Community Pharmacists",
+        "details": "The largest proportion of the pharmacy workforce work in community pharmacy, so why is it that we don’t put ourselves forward for Clinical Fellow schemes? Out of the 14 Fellows on the Chief Pharmaceutical Officer’s Clinical Fellows Scheme in England, I am the only one with a community pharmacy background. For a sector that represents around 70% of the pharmacy workforce, this is something we need to change! Pharmacists from our sector  are also the pharmacy leaders of the future. Fellowships allow us to demonstrate at a national level the benefits our sector offers patients and help to make a difference to every single patient who walks through the doors of their local community pharmacy, not just our own. As part of the Chief Pharmaceutical Officer’s Clinical Fellow Scheme, you work in different host organisations for a 12-month period ‘ alongside senior leaders, leading on key projects which have a direct impact on primary care and community pharmacy. You can do this too! I’d love to see more colleagues step forward and apply.  The skills you’ve gained working in community pharmacy are ideally suited to a Fellowship role. As a community pharmacist I was the leader of a team of people (sometimes in new locations) and responsible for the safe day to day running of the pharmacy. I had to build rapport with staff and understand how to listen, persuade and negotiate with each individual so that tasks were completed effectively. Alongside this, I supported staff development and was responsible for their education and training. Being organised and prioritising time to ensure that urgent and important tasks are completed is a key day to day skill in community pharmacy. Often, I was faced with doing this in high pressure environments where I had challenges and uncertainties that I had to overcome and deal with in a logical manner. We are the masters of multi-tasking! Running alongside this was the need to ensure patient safety was maintained and to continually seek out ways in which this could be improved and how risk could be effectively managed. All of these are things that many of you will be doing every day, so don’t underestimate the skillset we have and how you can transfer these. Community pharmacy has a crucial role in our health system. We need passionate people to come forward and advocate for the sector, shaping future developments but also bringing new ideas to the table of what the sector is capable of."
     },
     {
         "section": "reviews",
         "id": "301",
-        "photo": "/photos/team2.jpg",
-        "name": "Kitchen inspired on Japanese",
+        "photo": "/photos/user4.jpg",
+        "name": "Seth R. Williams",
         "title": "Buyer",
-        "details": "The microscope is a device for viewing objects that are too small to be observed with the naked eye. In the healthcare industry, it is used in laboratories to make diagnoses from biopsies or other biological sample preparations. Microscopes are usually a lens system that magnifies the object under observation. "
+        "details": "Everybody is friendly and does a good job. I've been using this pharmacy for 20 years and they have done excellent work since day 1! Keep up the good work!"
     },
     {
         "section": "reviews",
         "id": "302",
-        "photo": "/photos/team2.jpg",
-        "name": "Kitchen inspired on Japanese",
+        "photo": "/photos/user2.jpg",
+        "name": "Denise W. Griffith",
         "title": "Buyer",
-        "details": "The microscope is a device for viewing objects that are too small to be observed with the naked eye. In the healthcare industry, it is used in laboratories to make diagnoses from biopsies or other biological sample preparations. Microscopes are usually a lens system that magnifies the object under observation. "
+        "details": "I'm always greeted with a friendly smile. I love how they keep the drive-through flowing - if somebody's waiting for a prescription, they have them drive around! "
     },
     {
         "section": "reviews",
         "id": "303",
-        "photo": "/photos/team2.jpg",
-        "name": "Kitchen inspired on Japanese",
+        "photo": "/photos/user3.jpg",
+        "name": "Anita C. Wallis",
         "title": "Buyer",
-        "details": "The microscope is a device for viewing objects that are too small to be observed with the naked eye. In the healthcare industry, it is used in laboratories to make diagnoses from biopsies or other biological sample preparations. Microscopes are usually a lens system that magnifies the object under observation. "
+        "details": "Friendliness, compassionate, consistent, and very professional. I like that the pharmacist and his wife are setting roots in this town"
     },
     {
         "section": "reviews",
         "id": "304",
-        "photo": "/photos/team2.jpg",
-        "name": "Kitchen inspired on Japanese",
+        "photo": "/photos/user4.jpg",
+        "name": "Doris W. Ring",
         "title": "Buyer",
-        "details": "The microscope is a device for viewing objects that are too small to be observed with the naked eye. In the healthcare industry, it is used in laboratories to make diagnoses from biopsies or other biological sample preparations. Microscopes are usually a lens system that magnifies the object under observation. "
+        "details": "They know who I am. I walk in and they say hi to me by name. I call in refills and a lot of them recognize my voice. It's very different than when I was using big chain pharmacies. "
     }
 ]

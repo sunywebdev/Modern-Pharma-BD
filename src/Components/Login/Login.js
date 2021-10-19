@@ -7,9 +7,12 @@ import useAuth from '../../context/useAuth';
 import image from './login.png'
 
 const Login = () => {
-    const { signInUsingGoogle, signInWithEmailPassword, auth } = useAuth()
+    const { signInUsingGoogle, signInWithEmailPassword, auth, error } = useAuth()
     const location = useLocation()
     const history = useHistory()
+    console.log(error);
+    const errorMsg = error === 'Firebase: Error (auth/wrong-password).' ? 'Your password is Worng' : ""
+    const errorMsg2 = error === 'Firebase: Error (auth/user-not-found).' ? "You dont't have any account" : ''
     const handleGoogleLogin = () => {
         signInUsingGoogle()
             .then((result) => {
@@ -39,7 +42,7 @@ const Login = () => {
                         <FloatingLabel controlId="floatingInput" label="Enter Your Password" className="mb-3 text-info">
                             <Form.Control className='border-info text-info' type="password" placeholder="Enter Your Password"  {...register("password", { required: true })} />
                         </FloatingLabel>
-
+                        <p className="text-danger py-1">{errorMsg}{errorMsg2}</p>
                         <Button type="submit" className='px-5 button border-0 bg-info w-100 mb-3'><i className="fas fa-shopping-cart me-3"></i>Log In</Button>
                         <Button onClick={handleGoogleLogin} className='px-5 button border-0 bg-info w-100 mb-3'><i className="fas fa-shopping-cart me-3"></i>Log In With Google</Button>
 

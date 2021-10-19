@@ -12,7 +12,7 @@ const Login = () => {
     const history = useHistory()
     console.log(error);
     const errorMsg = error === 'Firebase: Error (auth/wrong-password).' ? 'Your password is Worng' : ""
-    const errorMsg2 = error === 'Firebase: Error (auth/user-not-found).' ? "You dont't have any account" : ''
+    const errorMsg2 = error === 'Firebase: Error (auth/user-not-found).' ? "You don't have any account" : ''
     const handleGoogleLogin = () => {
         signInUsingGoogle()
             .then((result) => {

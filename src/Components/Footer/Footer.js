@@ -8,7 +8,7 @@ const Footer = () => {
                 <div className="col-md-6 m-auto">
                     <div className="list-group text-center text-md-start ">
                         <h3 className="list-group-item  bg-dark text-light  border-0">About Our Company</h3>
-                        <p className="list-group-item  bg-dark text-light  border-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quod ratione, illum accusamus provident nesciunt corporis aliquid at quasi totam, fugit perspiciatis similique harum ipsam minima, aspernatur sint asperiores. Iure.</p>
+                        <p className="list-group-item  bg-dark text-light  border-0">Bangladesh's most convenient online pharmacy, Bangladesh Pharmacy, is brought to you by the Dadha & Company – one of Bangladesh’s most trusted pharmacies, with over 100 years’ experience in dispensing quality medicines. At M.Pharma, we help you look after your own health effortlessly as well as take care of loved ones wherever they may reside in Bangladesh. You can buy and send medicines from any corner of the country - with just a few clicks of the mouse</p>
                     </div>
                 </div>
                 <div className="col-md-3">

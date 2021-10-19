@@ -7,13 +7,13 @@ import image from './sign.jpg'
 import useAuth from '../../context/useAuth';
 
 const Signup = () => {
-    const { createNewUserUsingEmailPassword, auth, error } = useAuth()
+    const { createNewUserUsingEmailPassword, auth, error, updateProfiles } = useAuth()
     const { register, handleSubmit } = useForm();
     const history = useHistory()
-    console.log(error);
     const errorMsg = error === 'Firebase: Error (auth/email-already-in-use).' ? 'You already have an account' : ''
     const errorMsg2 = error === 'Firebase: Password should be at least 6 characters (auth/weak-password).' ? 'Password must be 6 charactre' : ''
     const onSubmit = (data) => {
+        updateProfiles(auth, data.businessName)
         createNewUserUsingEmailPassword(auth, data.email, data.password)
             .then((user) => {
                 // eslint-disable-next-line no-lone-blocks
@@ -37,10 +37,10 @@ const Signup = () => {
                         </FloatingLabel>
                         <p className="text-danger py-1">{errorMsg}{errorMsg2}</p>
 
-                        <Button type="submit" className='px-5 button border-0 bg-info w-100 mb-3'><i className="fas fa-shopping-cart me-3"></i>Sign Up</Button>
+                        <Button type="submit" className='px-5 button border-0 bg-info w-100 mb-3'><i className="fas fa-sign-in-alt me-3"></i>Sign Up</Button>
 
                         <Link to='/login' className='text-decoration-none'>
-                            <Button className='px-5 button border-0 bg-info w-100 mb-3'><i className="fas fa-shopping-cart me-3"></i>Already Have Account?</Button>
+                            <Button className='px-5 button border-0 bg-info w-100 mb-3'><i className="far fa-question-circle me-3"></i>Already Have Account?</Button>
                         </Link>
                     </form>
                 </div>
@@ -49,7 +49,7 @@ const Signup = () => {
                 </div>
             </div>
             <Link to='/home' className='text-decoration-none text-light'>
-                <Button className='my-4 px-5 bg-info border-info'>Back To Home</Button>
+                <Button className='my-4 px-5 bg-info border-info'><i class="fas fa-arrow-circle-left me-3"></i>Back To Home</Button>
             </Link>
         </Container>
     );

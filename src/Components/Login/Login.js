@@ -43,17 +43,17 @@ const Login = () => {
                             <Form.Control className='border-info text-info' type="password" placeholder="Enter Your Password"  {...register("password", { required: true })} />
                         </FloatingLabel>
                         <p className="text-danger py-1">{errorMsg}{errorMsg2}</p>
-                        <Button type="submit" className='px-5 button border-0 bg-info w-100 mb-3'><i className="fas fa-shopping-cart me-3"></i>Log In</Button>
-                        <Button onClick={handleGoogleLogin} className='px-5 button border-0 bg-info w-100 mb-3'><i className="fas fa-shopping-cart me-3"></i>Log In With Google</Button>
+                        <Button type="submit" className='px-5 button border-0 bg-info w-100 mb-3'><i className="fas fa-sign-in-alt me-3"></i>Log In</Button>
+                        <Button onClick={handleGoogleLogin} className='px-5 button border-0 bg-info w-100 mb-3'><i className="fab fa-google me-3"></i>Log In With Google</Button>
 
                         <Link to='/signup' className='text-decoration-none'>
-                            <Button className='px-5 button border-0 bg-info w-100 mb-3'><i className="fas fa-shopping-cart me-3"></i>Don't Have Account?</Button>
+                            <Button className='px-5 button border-0 bg-info w-100 mb-3'><i className="far fa-question-circle me-3"></i>Don't Have Account?</Button>
                         </Link>
                     </form>
                 </div>
             </div>
             <Link to='/home' className='text-decoration-none text-light'>
-                <Button className='my-4 px-5 bg-info border-info'>Back To Home</Button>
+                <Button className='my-4 px-5 bg-info border-info'><i class="fas fa-arrow-circle-left me-3"></i>Back To Home</Button>
             </Link>
         </Container>
     );

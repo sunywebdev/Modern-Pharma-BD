@@ -32,8 +32,8 @@ const Cart = ({ cart, removeItem, subTotal, fee }) => {
                                             <ListGroup horizontal className=" text-start rounded">
                                                 <ListGroup.Item className="border-0" style={{ backgroundColor: "#F5F5F5" }}>
                                                     <img src={items?.photo} className="img-fluid rounded-start" alt="..." style={{ maxWidth: "100px" }} /></ListGroup.Item>
-                                                <ListGroup.Item className=" border-0" style={{ backgroundColor: "#F5F5F5" }}>
-                                                    <h6 className="fw-bold">{items?.name}</h6>
+                                                <ListGroup.Item className=" border-0  px-0" style={{ backgroundColor: "#F5F5F5" }}>
+                                                    <h6 className="fw-bold ">{items?.name}</h6>
                                                     <h4 className="text-info fw-bold">$ {items?.price}</h4>
                                                     <h6 className="text-info fw-bold">{quantity} Pcs</h6>
                                                     <small>Delevery Fee : <span className="fw-bold text-info">$ {items?.fee}</span></small>
@@ -117,10 +117,8 @@ const Cart = ({ cart, removeItem, subTotal, fee }) => {
                     :
                     <>
                         <h2 className="my-5 fs-1 fw-bold text-info">Looks like You Didn't Added Anything In Your Cart</h2>
-                        <Link to='/Home' className='text-decoration-none'>
-                            <Button className='px-5 button border-0 bg-info mt-2 rounded-pill'>
-                                <i className="fas fa-arrow-circle-left me-3"></i>Back To Home
-                            </Button>
+                        <Link to='/home' className='text-decoration-none text-light'>
+                            <Button className='my-4 px-5 bg-info border-info'><i class="fas fa-arrow-circle-left me-3"></i>Back To Home</Button>
                         </Link>
                     </>
             }

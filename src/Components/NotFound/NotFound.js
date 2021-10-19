@@ -11,7 +11,7 @@ const NotFound = () => {
                 </h2>
             </div>
             <Link to='/home' className='text-decoration-none text-light'>
-                <Button className='my-4 bg-info border-info'>Back To Home</Button>
+                <Button className='my-4 px-5 bg-info border-info'><i class="fas fa-arrow-circle-left me-3"></i>Back To Home</Button>
             </Link>
         </Container>
     );

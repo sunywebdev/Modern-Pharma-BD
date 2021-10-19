@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { getAuth, signInWithPopup, GoogleAuthProvider, signOut, onAuthStateChanged, createUserWithEmailAndPassword, signInWithEmailAndPassword, sendEmailVerification } from "firebase/auth";
+import { getAuth, signInWithPopup, GoogleAuthProvider, signOut, onAuthStateChanged, createUserWithEmailAndPassword, signInWithEmailAndPassword, sendEmailVerification, updateProfile } from "firebase/auth";
 import initializeAuth from "./firebase.init";
 
 initializeAuth()
@@ -32,7 +32,14 @@ const useFirebase = () => {
                 setError(errorMessage);
             }).finally(() => setIsloading(false))
     }
-
+    const updateProfiles = (auth, displayName) => {
+        setIsloading(true)
+        return updateProfile(auth.currentUser, displayName)
+            .catch((error) => {
+                // An error occurred
+                // ...
+            }).finally(() => setIsloading(false))
+    }
     const signInWithEmailPassword = (auth, email, password) => {
         setIsloading(true)
         return signInWithEmailAndPassword(auth, email, password)
@@ -73,7 +80,7 @@ const useFirebase = () => {
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
     return {
-        auth, user, error, signInUsingGoogle, createNewUserUsingEmailPassword, signInWithEmailPassword, logOut, verifyEmail, isLoading
+        auth, user, error, signInUsingGoogle, createNewUserUsingEmailPassword, signInWithEmailPassword, logOut, verifyEmail, isLoading, updateProfiles
     }
 };
 

@@ -20,7 +20,7 @@ const NavBar = ({ cart }) => {
         <div>
             <Navbar expand="lg" variant="light" bg="light">
                 <Container>
-                    <Navbar.Brand className='fw-bold text-info'>
+                    <Navbar.Brand className='fw-bold text-info me-0'>
                         <Link activeStyle={activeactiveStyle} style={navbar} exact to="/">M.PharmaBD</Link>
                     </Navbar.Brand>
                     <Link className='d-block d-md-none mx-3 mt-3 fw-bold text-danger text-decoration-none' to='/cart'>
@@ -31,18 +31,21 @@ const NavBar = ({ cart }) => {
                             </span>
                         </button>
                     </Link>
-                  
+
                     <Navbar.Toggle aria-controls="basic-navbar-nav">
-                        {user?.photoURL ?
-                            <img src={user?.photoURL} alt="mdo" width="32" height="32" className="rounded-circle" />
-                            :
-                            <img src={placeholder} alt="mdo" width="32" height="32" className="rounded-circle" />
-                        }
+                        {user.email && <>
+                            {user?.photoURL ?
+                                <img src={user?.photoURL} alt="mdo" width="32" height="32" className="rounded-circle" />
+                                :
+                                <img src={placeholder} alt="mdo" width="32" height="32" className="rounded-circle" />
+                            }
+                            <i class="fas fa-sort-down ps-1"></i>
+                        </>}
                     </Navbar.Toggle>
-                      <i onClick={logOut} className="d-block d-md-none fas fa-sign-out-alt fa-2x text-danger ps-2"></i>
+                    {user.email && <i onClick={logOut} className="d-block d-md-none fas fa-sign-out-alt fa-2x text-danger ps-2"></i>}
                     <Navbar.Collapse id="basic-navbar-nav " className="justify-content-center">
                         <Nav>
-                            <span className="d-block d-md-none fw-bold me-2">Welcome {user?.displayName}</span>
+                            {user.email && <span className="d-block d-md-none fw-bold me-2">Welcome, {user?.displayName}</span>}
                             <NavLink activeStyle={activeactiveStyle} style={navbar} exact to="/">Home</NavLink>
                             <NavLink activeStyle={activeactiveStyle} style={navbar} to="/allproducts">Products</NavLink>
                             <NavLink activeStyle={activeactiveStyle} style={navbar} to="/aboutus">About Us</NavLink>
@@ -57,7 +60,7 @@ const NavBar = ({ cart }) => {
                         </Nav>
                     </Navbar.Collapse>
                     <div className="d-none d-md-block ">
-                        <Link className='mx-3 mt-3 fw-bold text-danger text-decoration-none' to='/cart'>
+                        <Link className='mx-3 mx-md-5 mt-3 fw-bold text-danger text-decoration-none' to='/cart'>
                             <button type="button" className="btn position-relative">
                                 <i className="fas fa-shopping-cart fs-5 text-info"></i>
                                 <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
@@ -65,13 +68,16 @@ const NavBar = ({ cart }) => {
                                 </span>
                             </button>
                         </Link>
-                        <span className="fw-bold me-2">Welcome {user?.displayName}</span>
-                        {user?.photoURL ?
-                            <img src={user?.photoURL} alt="mdo" width="32" height="32" className="rounded-circle" />
-                            :
-                            <img src={placeholder} alt="mdo" width="32" height="32" className="rounded-circle" />
+                        {user.email &&
+                            <>
+                                <span className="fw-bold me-2">Welcome, {user?.displayName}</span>
+                                {user?.photoURL ?
+                                    <img src={user?.photoURL} alt="mdo" width="32" height="32" className="rounded-circle" />
+                                    :
+                                    <img src={placeholder} alt="mdo" width="32" height="32" className="rounded-circle" />
+                                }
+                                <span>  <i onClick={logOut} className="fas fa-sign-out-alt fa-2x text-danger ps-2"></i></span></>
                         }
-                        <span>  <i onClick={logOut} className="fas fa-sign-out-alt fa-2x text-danger ps-2"></i></span>
                     </div>
                 </Container>
             </Navbar>

@@ -14,7 +14,7 @@ const LocationAndTime = () => {
                         <thead>
                             <tr>
                                 <th>Open Hours</th>
-                                <th><i class="fas fa-history"></i> {`${hours} : ${min} : ${sec}`}</th>
+                                <th><i className="fas fa-history"></i> {`${hours} : ${min} : ${sec}`}</th>
                             </tr>
                         </thead>
                         <tbody>

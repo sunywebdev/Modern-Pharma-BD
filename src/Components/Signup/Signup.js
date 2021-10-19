@@ -2,18 +2,29 @@ import React from 'react';
 import { Container, Button, FloatingLabel, Form } from 'react-bootstrap';
 import { useForm } from 'react-hook-form';
 import { Link } from 'react-router-dom';
+import { useHistory } from 'react-router';
+import useAuth from '../../context/useAuth';
+import image from './sign.jpg'
 
 const Signup = () => {
+    const { createNewUserUsingEmailPassword, auth, verifyEmail } = useAuth()
     const { register, handleSubmit } = useForm();
-    const onSubmit = (data) => {
+    const history = useHistory()
 
+    const onSubmit = (data) => {
+        createNewUserUsingEmailPassword(auth, data.email, data.password)
+            .then((user) => {
+                verifyEmail()
+                // eslint-disable-next-line no-lone-blocks
+                { user && history.go(-2) }
+            })
     }
     return (
         <Container className='mt-5' id='news'>
             <h2 className="fs-1 fw-bold my-5 text-info text-uppercase">Sign Up</h2>
-            <div class="row flex-lg-row-reverse align-items-center g-5">
-                <div class="col-md-8">
-                    <form className='col-md-7 mx-auto' onSubmit={handleSubmit(onSubmit)}>
+            <div className="row flex-lg-row-reverse align-items-center g-5">
+                <div className="col-md-7">
+                    <form className='col-md-7 mx-auto w-75' onSubmit={handleSubmit(onSubmit)}>
                         <FloatingLabel controlId="floatingInput" label="Enter Your Name" className="mb-3 text-info">
                             <Form.Control className='border-info text-info' type="text" placeholder="Enter Your Name"  {...register("businessName", { required: true })} />
                         </FloatingLabel>
@@ -25,15 +36,15 @@ const Signup = () => {
                         </FloatingLabel>
 
 
-                        <Button className='px-5 button border-0 bg-info w-100 mb-3'><i className="fas fa-shopping-cart me-3"></i>Sign Up</Button>
+                        <Button type="submit" className='px-5 button border-0 bg-info w-100 mb-3'><i className="fas fa-shopping-cart me-3"></i>Sign Up</Button>
 
                         <Link to='/login' className='text-decoration-none'>
                             <Button className='px-5 button border-0 bg-info w-100 mb-3'><i className="fas fa-shopping-cart me-3"></i>Already Have Account?</Button>
                         </Link>
                     </form>
                 </div>
-                <div class="col-md-4 text-start d-none d-lg-block">
-                    ffffffffffffff
+                <div className="col-md-5 text-start d-none d-lg-block">
+                    <img src={image} alt="" className='w-100' />
                 </div>
             </div>
             <Link to='/home' className='text-decoration-none text-light'>

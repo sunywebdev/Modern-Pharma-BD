@@ -15,7 +15,7 @@ const News = () => {
                             <Card style={{ borderRadius: '19px' }} className='shadow bg-light'>
                                 <Card.Img variant="top" src={item?.photo} style={{ borderRadius: '19px 19px 0 0' }} />
                                 <Card.Body>
-                                    <p><i class="fas fa-calendar-alt text-primary"></i> &nbsp; {item?.time}</p>
+                                    <p><i className="fas fa-calendar-alt text-primary"></i> &nbsp; {item?.time}</p>
                                     <Card.Title className='fw-bold text-info'>{item?.headline}</Card.Title>
                                     <Card.Text>
                                         {item?.details.slice(0, 90)}...

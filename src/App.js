@@ -14,6 +14,9 @@ import Signup from './Components/Signup/Signup';
 import Cart from './Components/Cart/Cart';
 import { useState } from 'react';
 import AllProducts from './Components/AllProducts/AllProducts';
+import AuthProvider from './context/AuthProvider';
+import PrivateRoute from './PrivateRoute/PrivateRoute';
+import AboutUs from './Components/AboutUs/AboutUs';
 
 function App() {
   const [cart, setCart] = useState([])
@@ -41,54 +44,58 @@ function App() {
   }
   return (
     <div className="App overflow-hidden">
-      <BrowserRouter>
-        <NavBar
-          cart={cart}
-        ></NavBar>
-        <Switch>
-          <Route exact path='/'>
-            <Home></Home>
-          </Route>
-          <Route path='/home'>
-            <Home></Home>
-          </Route>
-          <Route path='/product/:itemID'>
-            <Product
-              addToCart={addToCart}
-            ></Product>
-          </Route>
-          <Route path='/allproducts'>
-            <AllProducts
-              addToCart={addToCart}
-            ></AllProducts>
-          </Route>
-          <Route path='/news/:itemID'>
-            <NewsDetails></NewsDetails>
-          </Route>
-          <Route path='/contactus'>
-            <ContactUs></ContactUs>
-          </Route>
-          <Route path='/login'>
-            <Login></Login>
-          </Route>
-          <Route path='/signup'>
-            <Signup></Signup>
-          </Route>
-          <Route path='/cart'>
-            <Cart
-              fee={fee}
-              subTotal={subTotal}
-              cart={cart}
-              removeItem={removeItem}
-            ></Cart>
-          </Route>
-          <Route path='*'>
-            <NotFound></NotFound>
-          </Route>
-        </Switch>
-        <Footer></Footer>
-      </BrowserRouter>
-
+      <AuthProvider>
+        <BrowserRouter>
+          <NavBar
+            cart={cart}
+          ></NavBar>
+          <Switch>
+            <Route exact path='/'>
+              <Home></Home>
+            </Route>
+            <Route path='/home'>
+              <Home></Home>
+            </Route>
+            <PrivateRoute path='/product/:itemID'>
+              <Product
+                addToCart={addToCart}
+              ></Product>
+            </PrivateRoute>
+            <Route path='/allproducts'>
+              <AllProducts
+                addToCart={addToCart}
+              ></AllProducts>
+            </Route>
+            <Route path='/news/:itemID'>
+              <NewsDetails></NewsDetails>
+            </Route>
+            <Route path='/contactus'>
+              <ContactUs></ContactUs>
+            </Route>
+            <Route path='/login'>
+              <Login></Login>
+            </Route>
+            <Route path='/signup'>
+              <Signup></Signup>
+            </Route>
+            <Route path='/aboutus'>
+              <AboutUs></AboutUs>
+            </Route>
+            <PrivateRoute path='/cart'>
+              <Cart
+                fee={fee}
+                subTotal={subTotal}
+                cart={cart}
+                removeItem={removeItem}
+              ></Cart>
+            </PrivateRoute>
+            <Route path='*'>
+              <NotFound></NotFound>
+            </Route>
+          </Switch>
+          <Footer></Footer>
+        </BrowserRouter>
+      </AuthProvider>
     </div>
   );
 }

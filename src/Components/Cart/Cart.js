@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { ListGroup, Col, Button, Table, FloatingLabel, Form } from 'react-bootstrap';
 import { useForm } from 'react-hook-form';
 import { Link } from 'react-router-dom';
-import LoadDB from '../../LoadDB/LoadDB';
 
 
 const Cart = ({ cart, removeItem, subTotal, fee }) => {
@@ -14,7 +13,6 @@ const Cart = ({ cart, removeItem, subTotal, fee }) => {
     const finalTotal = total + totalFee + tax
 
     const { register, handleSubmit } = useForm();
-    const [items] = LoadDB()
     const onSubmit = (data) => {
 
     }
@@ -49,9 +47,9 @@ const Cart = ({ cart, removeItem, subTotal, fee }) => {
                                             </ListGroup>
                                             <ListGroup>
                                                 <ListGroup.Item className="border-0 py-0 my-0" style={{ backgroundColor: "#F5F5F5" }}>
-                                                    <i onClick={() => quantity > 1 && setQuantity(quantity - 1)} class="fas fa-minus-circle fa-2x text-info me-3"></i>
+                                                    <i onClick={() => quantity > 1 && setQuantity(quantity - 1)} className="fas fa-minus-circle fa-2x text-info me-3"></i>
                                                     <span className='text-info fw-bold fs-2'>{quantity}</span>
-                                                    <i onClick={() => setQuantity(quantity + 1)} class="fas fa-plus-circle fa-2x text-info ms-3"></i>
+                                                    <i onClick={() => setQuantity(quantity + 1)} className="fas fa-plus-circle fa-2x text-info ms-3"></i>
                                                 </ListGroup.Item>
                                             </ListGroup>
                                         </Col>

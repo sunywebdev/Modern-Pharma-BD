@@ -15,8 +15,8 @@ const NewsDetails = () => {
                         <div class="col-md-6 text-start">
                             <div className="row">
                                 <div className="col"><i class="fas fa-user-alt text-primary"></i> &nbsp; {item?.by}</div>
-                            <div className="col"><i class="fas fa-calendar-alt text-primary"></i> &nbsp; {item?.time}</div>
-                            <div className="col"><i class="fas fa-folder text-primary"></i> &nbsp; {item?.folder}</div>
+                                <div className="col"><i class="fas fa-calendar-alt text-primary"></i> &nbsp; {item?.time}</div>
+                                <div className="col"><i class="fas fa-folder text-primary"></i> &nbsp; {item?.folder}</div>
                             </div>
                             <h2 className='fw-bold py-3'>{item?.headline}</h2>
                             <p className='text-secondary'>{item?.details}</p>
@@ -25,12 +25,13 @@ const NewsDetails = () => {
                             <img src={item?.photo} class="d-block mx-lg-auto img-fluid w-100" alt="" loading="lazy" />
                         </div>
                     </div>
-                    <Button className='my-4 bg-info border-info'><Link to='/home' className='text-decoration-none text-light'>Back To Home</Link> </Button>
                 </>
 
             )}
 
-
+            <Link to='/home' className='text-decoration-none text-light'>
+                <Button className='my-4 px-5 bg-info border-info'>Back To Home</Button>
+            </Link>
         </Container>
     );
 };

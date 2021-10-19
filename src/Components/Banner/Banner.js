@@ -23,16 +23,13 @@ const Banner = () => {
                         <h1 class="display-5 fw-bold lh-1 mb-3 text-info">Modern Pharma BD</h1>
                         <p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
                         <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-                            <Button className="bg-info px-5 py-3 gap-3 border-0 fw-bold">
-                                <HashLink className="text-decoration-none text-light" smooth to="/#getUs">
-                                    Get Us
-                                </HashLink>
-                            </Button>
-                            <Button className="bg-info px-5 py-3 gap-3 border-0 fw-bold">
-                                <HashLink className="text-decoration-none text-light" smooth to="/#news">
-                                    News And Blogs
-                                </HashLink>
-                            </Button>
+                            <HashLink className="text-decoration-none text-light" smooth to="/#getUs">
+                                <Button className="bg-info px-5 py-3 gap-3 border-0 fw-bold w-100">Get Us  </Button>
+                            </HashLink>
+                            <HashLink className="text-decoration-none text-light" smooth to="/#news">
+                                <Button className="bg-info px-5 py-3 gap-3 border-0 fw-bold w-100">News And Blogs</Button>
+                            </HashLink>
+
                         </div>
                     </div>
                 </div>

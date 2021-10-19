@@ -6,57 +6,129 @@
         "price": 100,
         "stock": 20,
         "rating": 5,
+        "fee": 2,
         "photo": "/photos/product01.webp",
         "details": "The microscope is a device for viewing objects that are too small to be observed with the naked eye. In the healthcare industry, it is used in laboratories to make diagnoses from biopsies or other biological sample preparations. Microscopes are usually a lens system that magnifies the object under observation. There are also examination and/or surgical microscopes used to magnify an area of the body so the doctor or surgeon can work more accurately. But these are not dealt with in this buying guide as they are part of the field of surgical microscopy."
     },
     {
         "section": "products",
         "id": "02",
-        "name": "Medical Microscope",
+        "name": "Hand Sanitizer Covid -19",
         "price": 100,
         "stock": 20,
         "rating": 5,
-        "photo": "/photos/product01.webp",
+        "fee": 2,
+        "photo": "/photos/product02.webp",
         "details": "The microscope is a device for viewing objects that are too small to be observed with the naked eye. In the healthcare industry, it is used in laboratories to make diagnoses from biopsies or other biological sample preparations. Microscopes are usually a lens system that magnifies the object under observation. There are also examination and/or surgical microscopes used to magnify an area of the body so the doctor or surgeon can work more accurately. But these are not dealt with in this buying guide as they are part of the field of surgical microscopy."
     },
     {
         "section": "products",
         "id": "03",
-        "name": "Medical Microscope",
+        "name": "Medical Thermometer",
         "price": 100,
         "stock": 20,
         "rating": 5,
-        "photo": "/photos/product01.webp",
+        "fee": 2,
+        "photo": "/photos/product03.webp",
         "details": "The microscope is a device for viewing objects that are too small to be observed with the naked eye. In the healthcare industry, it is used in laboratories to make diagnoses from biopsies or other biological sample preparations. Microscopes are usually a lens system that magnifies the object under observation. There are also examination and/or surgical microscopes used to magnify an area of the body so the doctor or surgeon can work more accurately. But these are not dealt with in this buying guide as they are part of the field of surgical microscopy."
     },
     {
         "section": "products",
         "id": "04",
-        "name": "Medical Microscope",
+        "name": "New Temperature Gun",
         "price": 100,
         "stock": 20,
         "rating": 5,
-        "photo": "/photos/product01.webp",
+        "fee": 2,
+        "photo": "/photos/product04.webp",
         "details": "The microscope is a device for viewing objects that are too small to be observed with the naked eye. In the healthcare industry, it is used in laboratories to make diagnoses from biopsies or other biological sample preparations. Microscopes are usually a lens system that magnifies the object under observation. There are also examination and/or surgical microscopes used to magnify an area of the body so the doctor or surgeon can work more accurately. But these are not dealt with in this buying guide as they are part of the field of surgical microscopy."
     },
     {
         "section": "products",
         "id": "05",
-        "name": "Medical Microscope",
+        "name": "Lab N95 Face Mask",
         "price": 100,
         "stock": 20,
         "rating": 5,
-        "photo": "/photos/product01.webp",
+        "fee": 2,
+        "photo": "/photos/product05.webp",
         "details": "The microscope is a device for viewing objects that are too small to be observed with the naked eye. In the healthcare industry, it is used in laboratories to make diagnoses from biopsies or other biological sample preparations. Microscopes are usually a lens system that magnifies the object under observation. There are also examination and/or surgical microscopes used to magnify an area of the body so the doctor or surgeon can work more accurately. But these are not dealt with in this buying guide as they are part of the field of surgical microscopy."
     },
     {
         "section": "products",
         "id": "06",
+        "name": "Hand Sanitizer Covid -19",
+        "price": 100,
+        "stock": 20,
+        "rating": 5,
+        "fee": 2,
+        "photo": "/photos/product06.webp",
+        "details": "The microscope is a device for viewing objects that are too small to be observed with the naked eye. In the healthcare industry, it is used in laboratories to make diagnoses from biopsies or other biological sample preparations. Microscopes are usually a lens system that magnifies the object under observation. There are also examination and/or surgical microscopes used to magnify an area of the body so the doctor or surgeon can work more accurately. But these are not dealt with in this buying guide as they are part of the field of surgical microscopy."
+    },
+    {
+        "section": "products",
+        "id": "07",
+        "name": "Medicine & Health",
+        "price": 100,
+        "stock": 20,
+        "rating": 5,
+        "fee": 2,
+        "photo": "/photos/product07.webp",
+        "details": "The microscope is a device for viewing objects that are too small to be observed with the naked eye. In the healthcare industry, it is used in laboratories to make diagnoses from biopsies or other biological sample preparations. Microscopes are usually a lens system that magnifies the object under observation. There are also examination and/or surgical microscopes used to magnify an area of the body so the doctor or surgeon can work more accurately. But these are not dealt with in this buying guide as they are part of the field of surgical microscopy."
+    },
+    {
+        "section": "products",
+        "id": "08",
+        "name": "Inhaler Pressure Meter",
+        "price": 100,
+        "stock": 20,
+        "rating": 5,
+        "fee": 2,
+        "photo": "/photos/product08.webp",
+        "details": "The microscope is a device for viewing objects that are too small to be observed with the naked eye. In the healthcare industry, it is used in laboratories to make diagnoses from biopsies or other biological sample preparations. Microscopes are usually a lens system that magnifies the object under observation. There are also examination and/or surgical microscopes used to magnify an area of the body so the doctor or surgeon can work more accurately. But these are not dealt with in this buying guide as they are part of the field of surgical microscopy."
+    },
+    {
+        "section": "products",
+        "id": "09",
+        "name": "Blood Pressure Meter",
+        "price": 100,
+        "stock": 20,
+        "rating": 5,
+        "fee": 2,
+        "photo": "/photos/product07.webp",
+        "details": "The microscope is a device for viewing objects that are too small to be observed with the naked eye. In the healthcare industry, it is used in laboratories to make diagnoses from biopsies or other biological sample preparations. Microscopes are usually a lens system that magnifies the object under observation. There are also examination and/or surgical microscopes used to magnify an area of the body so the doctor or surgeon can work more accurately. But these are not dealt with in this buying guide as they are part of the field of surgical microscopy."
+    },
+    {
+        "section": "products",
+        "id": "10",
+        "name": "Oximeter",
+        "price": 100,
+        "stock": 20,
+        "rating": 5,
+        "fee": 2,
+        "photo": "/photos/product07.webp",
+        "details": "The microscope is a device for viewing objects that are too small to be observed with the naked eye. In the healthcare industry, it is used in laboratories to make diagnoses from biopsies or other biological sample preparations. Microscopes are usually a lens system that magnifies the object under observation. There are also examination and/or surgical microscopes used to magnify an area of the body so the doctor or surgeon can work more accurately. But these are not dealt with in this buying guide as they are part of the field of surgical microscopy."
+    },
+    {
+        "section": "products",
+        "id": "11",
         "name": "Medical Microscope",
         "price": 100,
         "stock": 20,
         "rating": 5,
+        "fee": 2,
         "photo": "/photos/product01.webp",
+        "details": "The microscope is a device for viewing objects that are too small to be observed with the naked eye. In the healthcare industry, it is used in laboratories to make diagnoses from biopsies or other biological sample preparations. Microscopes are usually a lens system that magnifies the object under observation. There are also examination and/or surgical microscopes used to magnify an area of the body so the doctor or surgeon can work more accurately. But these are not dealt with in this buying guide as they are part of the field of surgical microscopy."
+    },
+    {
+        "section": "products",
+        "id": "12",
+        "name": "Inhaler Pressure Meter",
+        "price": 100,
+        "stock": 20,
+        "rating": 5,
+        "fee": 2,
+        "photo": "/photos/product08.webp",
         "details": "The microscope is a device for viewing objects that are too small to be observed with the naked eye. In the healthcare industry, it is used in laboratories to make diagnoses from biopsies or other biological sample preparations. Microscopes are usually a lens system that magnifies the object under observation. There are also examination and/or surgical microscopes used to magnify an area of the body so the doctor or surgeon can work more accurately. But these are not dealt with in this buying guide as they are part of the field of surgical microscopy."
     },
     {
@@ -71,21 +143,21 @@
         "id": "102",
         "name": "Dr. John Doe",
         "title": "Medical Director",
-        "photo": "/photos/team1.jpg"
+        "photo": "/photos/team2.jpg"
     },
     {
         "section": "team",
         "id": "103",
         "name": "Dr. John Doe",
         "title": "Medical Director",
-        "photo": "/photos/team1.jpg"
+        "photo": "/photos/team3.jpg"
     },
     {
         "section": "team",
         "id": "104",
         "name": "Dr. John Doe",
         "title": "Medical Director",
-        "photo": "/photos/team1.jpg"
+        "photo": "/photos/team4.jpg"
     },
     {
         "section": "news",
@@ -115,5 +187,37 @@
         "folder": "News",
         "headline": "Kitchen inspired on Japanese",
         "details": "The microscope is a device for viewing objects that are too small to be observed with the naked eye. In the healthcare industry, it is used in laboratories to make diagnoses from biopsies or other biological sample preparations. Microscopes are usually a lens system that magnifies the object under observation. There are also examination and/or surgical microscopes used to magnify an area of the body so the doctor or surgeon can work more accurately. But these are not dealt with in this buying guide as they are part of the field of surgical microscopy.The microscope is a device for viewing objects that are too small to be observed with the naked eye. In the healthcare industry, it is used in laboratories to make diagnoses from biopsies or other biological sample preparations. Microscopes are usually a lens system that magnifies the object under observation. There are also examination and/or surgical microscopes used to magnify an area of the body so the doctor or surgeon can work more accurately. But these are not dealt with in this buying guide as they are part of the field of surgical microscopy."
+    },
+    {
+        "section": "reviews",
+        "id": "301",
+        "photo": "/photos/team2.jpg",
+        "name": "Kitchen inspired on Japanese",
+        "title": "Buyer",
+        "details": "The microscope is a device for viewing objects that are too small to be observed with the naked eye. In the healthcare industry, it is used in laboratories to make diagnoses from biopsies or other biological sample preparations. Microscopes are usually a lens system that magnifies the object under observation. "
+    },
+    {
+        "section": "reviews",
+        "id": "302",
+        "photo": "/photos/team2.jpg",
+        "name": "Kitchen inspired on Japanese",
+        "title": "Buyer",
+        "details": "The microscope is a device for viewing objects that are too small to be observed with the naked eye. In the healthcare industry, it is used in laboratories to make diagnoses from biopsies or other biological sample preparations. Microscopes are usually a lens system that magnifies the object under observation. "
+    },
+    {
+        "section": "reviews",
+        "id": "303",
+        "photo": "/photos/team2.jpg",
+        "name": "Kitchen inspired on Japanese",
+        "title": "Buyer",
+        "details": "The microscope is a device for viewing objects that are too small to be observed with the naked eye. In the healthcare industry, it is used in laboratories to make diagnoses from biopsies or other biological sample preparations. Microscopes are usually a lens system that magnifies the object under observation. "
+    },
+    {
+        "section": "reviews",
+        "id": "304",
+        "photo": "/photos/team2.jpg",
+        "name": "Kitchen inspired on Japanese",
+        "title": "Buyer",
+        "details": "The microscope is a device for viewing objects that are too small to be observed with the naked eye. In the healthcare industry, it is used in laboratories to make diagnoses from biopsies or other biological sample preparations. Microscopes are usually a lens system that magnifies the object under observation. "
     }
 ]

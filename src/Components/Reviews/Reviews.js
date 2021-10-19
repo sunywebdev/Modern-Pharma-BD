@@ -54,29 +54,30 @@ const Reviews = () => {
 
             <Slider {...settings}>
                 {Array.from({ length: 5 }).map((_, idx) => (
-                    <div class="mb-3 p-2 p-md-3">
-                        <div className=" bg-light p-4 border border-2 border-secondary" style={{ borderRadius: '19px' }}>
-                            <div class="d-flex justify-content-between align-items-center my-2">
-                                <div>
-                                    <img src="https://klbtheme.com/medibazar/wp-content/uploads/2020/09/01-1.png" alt="" />
+                    items?.map(item => item?.section === 'reviews' &&
+                        <div class="mb-3 p-2 p-md-3">
+                            <div className=" bg-light p-4 border border-2 border-secondary shadow" style={{ borderRadius: '19px' }}>
+                                <div class="d-flex justify-content-between align-items-center my-2">
+                                    <div>
+                                    <img src={item?.photo} alt="" className="rounded-circle border border-5 border-info" style={{width:"95px"}}/>
+                                    </div>
+                                    <div class="rating">
+                                        <Rating className='fs-5 text-warning'
+                                            emptySymbol="fa fa-star-o "
+                                            fullSymbol="fa fa-star "
+                                            initialRating={5}
+                                            readonly
+                                        />
+                                    </div>
                                 </div>
-                                <div class="rating">
-                                    <Rating className='fs-5 text-warning'
-                                        emptySymbol="fa fa-star-o "
-                                        fullSymbol="fa fa-star "
-                                        initialRating={5}
-                                        readonly
-                                    />
+                                <div class="text-start">
+                                    <p>{item?.details}</p>
+                                    <h4 className='text-info fw-bold'>{item?.name}</h4>
+                                    <span>{item?.title}</span>
                                 </div>
-                            </div>
-                            <div class="text-start">
-                                <p>Sed perspiciatis unde omnis iste natus erolup tatem accusantium doloremque laudantium totam reperiam eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p
-                                ><h4 className='text-info fw-bold'>Daisy Lana</h4>
-                                <span>Designer</span>
                             </div>
                         </div>
-                    </div>
-                ))}
+                    )))}
             </Slider>
         </Container >
     );

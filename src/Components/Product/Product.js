@@ -5,7 +5,7 @@ import { useParams } from 'react-router';
 import { Link } from 'react-router-dom';
 import LoadDB from '../../LoadDB/LoadDB';
 
-const Product = () => {
+const Product = (props) => {
     const { itemID } = useParams()
     const [items] = LoadDB()
     return (
@@ -36,15 +36,19 @@ const Product = () => {
                                 </span>
                             </h5>
                             <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                                <Button className="bg-danger bg-gradient border-danger px-5 rounded-pill">Add To Cart</Button>
+                                <Button onClick={() => {
+                                    props.addToCart(item)
+                                }} className="bg-danger bg-gradient border-danger px-5 rounded-pill">Add To Cart</Button>
                             </div>
                         </div><div class="col-md-6">
-                            <img src="http://localhost:3000/photos/product01.webp" class="d-block mx-lg-auto img-fluid w-100" alt="" width="700" height="500" loading="lazy" />
+                            <img src={item?.photo} class="d-block mx-lg-auto img-fluid w-100" alt="" width="700" height="500" loading="lazy" />
                         </div>
                     </div>
-                    <Button className='my-5 bg-info border-info'><Link to='/home' className='text-decoration-none text-light'>Back To Home</Link> </Button>
                 </>
             )}
+            <Link to='/home' className='text-decoration-none text-light'>
+                <Button className='my-4 px-5 bg-info border-info'>Back To Home</Button>
+            </Link>
         </Container>
 
     );

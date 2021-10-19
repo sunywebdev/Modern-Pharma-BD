@@ -4,11 +4,11 @@ import Rating from 'react-rating';
 import { Link } from 'react-router-dom';
 import LoadDB from '../../LoadDB/LoadDB';
 
-const Products = () => {
+const AllProducts = () => {
     const [items] = LoadDB()
     return (
         <Container className='mt-5'>
-            <h2 className="fs-1 fw-bold mt-5 mb-4 text-info text-uppercase">Our Latest Products</h2>
+            <h2 className="fs-1 fw-bold mt-5 mb-4 text-info text-uppercase">Our Products</h2>
             <Row xs={1} md={2} lg={3} className="g-4">
                 {Array.from({ length: 1 }).map((_, idx) => (
                     items?.map(item => item?.section === 'products' &&
@@ -34,13 +34,11 @@ const Products = () => {
                                 </Card.Body>
                             </Card>
                         </Col>
-                    ).slice(0, 6)))}
+                    )))}
             </Row>
-            <Link to='/allproducts' className='text-decoration-none text-light'>
-                <Button className='my-4 px-5 bg-info border-info'>Browse More</Button>
-            </Link>
         </Container >
     );
 };
 
-export default Products;
+
+export default AllProducts;

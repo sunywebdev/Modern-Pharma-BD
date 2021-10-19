@@ -61,26 +61,26 @@ function App() {
                 addToCart={addToCart}
               ></Product>
             </PrivateRoute>
-            <Route path='/allproducts'>
+            <PrivateRoute path='/allproducts'>
               <AllProducts
                 addToCart={addToCart}
               ></AllProducts>
-            </Route>
+            </PrivateRoute>
             <Route path='/news/:itemID'>
               <NewsDetails></NewsDetails>
             </Route>
-            <Route path='/contactus'>
+            <PrivateRoute path='/contactus'>
               <ContactUs></ContactUs>
-            </Route>
+            </PrivateRoute>
             <Route path='/login'>
               <Login></Login>
             </Route>
             <Route path='/signup'>
               <Signup></Signup>
             </Route>
-            <Route path='/aboutus'>
+            <PrivateRoute path='/aboutus'>
               <AboutUs></AboutUs>
-            </Route>
+            </PrivateRoute>
             <PrivateRoute path='/cart'>
               <Cart
                 fee={fee}

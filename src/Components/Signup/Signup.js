@@ -12,6 +12,7 @@ const Signup = () => {
     const history = useHistory()
     console.log(error);
     const errorMsg = error === 'Firebase: Error (auth/email-already-in-use).' ? 'You already have an account' : ''
+    const errorMsg2 = error === 'Firebase: Password should be at least 6 characters (auth/weak-password).' ? 'Password must be 6 charactre' : ''
     const onSubmit = (data) => {
         createNewUserUsingEmailPassword(auth, data.email, data.password)
             .then((user) => {
@@ -34,7 +35,7 @@ const Signup = () => {
                         <FloatingLabel controlId="floatingInput" label="Enter Your Password" className="mb-3 text-info">
                             <Form.Control className='border-info text-info' type="password" placeholder="Enter Your Password"  {...register("password", { required: true })} />
                         </FloatingLabel>
-                        <p className="text-danger py-1">{errorMsg}</p>
+                        <p className="text-danger py-1">{errorMsg}{errorMsg2}</p>
 
                         <Button type="submit" className='px-5 button border-0 bg-info w-100 mb-3'><i className="fas fa-shopping-cart me-3"></i>Sign Up</Button>
 

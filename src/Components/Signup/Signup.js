@@ -17,7 +17,7 @@ const Signup = () => {
         createNewUserUsingEmailPassword(auth, data.email, data.password)
             .then((user) => {
                 // eslint-disable-next-line no-lone-blocks
-               
+                /*  { user && history?.go(-2) } */
             })
     }
     return (

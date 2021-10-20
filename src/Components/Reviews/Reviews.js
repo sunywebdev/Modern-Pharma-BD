@@ -50,16 +50,17 @@ const Reviews = () => {
     };
     return (
         <Container className='mt-5'>
-            <h2 className="fs-1 fw-bold mt-5 mb-4 text-info text-uppercase">What Our Client’s Say</h2>
+            <h2 className="fs-1 fw-bold mt-5 text-1 mb-0 text-uppercase">What Our Client’s Say</h2>
+            <p className='text-2 col-md-7 mx-auto mb-4 '>Get unbiased ratings and reviews for 9000+ products and services from Consumer Reports, plus trusted advice and in-depth reporting on what matters most.</p>
 
             <Slider {...settings}>
                 {Array.from({ length: 1 }).map((_, idx) => (
                     items?.map(item => item?.section === 'reviews' &&
                         <div className="mb-3 p-2 p-md-3 ">
-                        <div className=" bg-light p-4 pCard border-0 " style={{ borderRadius: '19px' }}>
+                            <div className=" bg-light p-4 pCard border-0 " style={{ borderRadius: '19px' }}>
                                 <div className="d-flex justify-content-between align-items-center my-2">
                                     <div>
-                                        <img src={item?.photo} alt="" className="rounded-circle border border-5 border-info" style={{ width: "95px" }} />
+                                        <img src={item?.photo} alt="" className="rounded-circle border border-5 border-1" style={{ width: "95px" }} />
                                     </div>
                                     <div className="rating">
                                         <Rating className='fs-5 text-warning'
@@ -72,7 +73,7 @@ const Reviews = () => {
                                 </div>
                                 <div className="text-start">
                                     <p>{item?.details}</p>
-                                    <h4 className='text-info fw-bold'>{item?.name}</h4>
+                                    <h4 className='text-1 fw-bold'>{item?.name}</h4>
                                     <span>{item?.title}</span>
                                 </div>
                             </div>

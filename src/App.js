@@ -17,6 +17,7 @@ import AllProducts from './Components/AllProducts/AllProducts';
 import AuthProvider from './context/AuthProvider';
 import PrivateRoute from './PrivateRoute/PrivateRoute';
 import AboutUs from './Components/AboutUs/AboutUs';
+import CheckOut from './Components/CheckOut/CheckOut';
 
 function App() {
   const [cart, setCart] = useState([])
@@ -60,6 +61,9 @@ function App() {
               <Product
                 addToCart={addToCart}
               ></Product>
+            </PrivateRoute>
+            <PrivateRoute path='/checkout'>
+              <CheckOut ></CheckOut>
             </PrivateRoute>
             <PrivateRoute path='/allproducts'>
               <AllProducts

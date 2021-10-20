@@ -9,23 +9,23 @@ const NavBar = ({ cart }) => {
     console.log(user);
     const activeactiveStyle = {
         fontWeight: "bold",
-        color: 'red'
+        color: '#121521'
     }
     const navbar = {
         textDecoration: 'none',
-        color: '#0DCAF0',
+        color: '#19CE67',
         padding: '7px 14px',
     }
     return (
         <div>
             <Navbar expand="lg" variant="light" bg="light">
                 <Container>
-                    <Navbar.Brand className='fw-bold text-info me-0'>
+                    <Navbar.Brand className='fw-bold text-1 me-0'>
                         <Link activeStyle={activeactiveStyle} style={navbar} exact to="/">M.PharmaBD</Link>
                     </Navbar.Brand>
-                    <Link className='d-block d-md-none mx-3 mt-3 fw-bold text-danger text-decoration-none' to='/cart'>
+                    <Link className='d-block d-md-none mx-3 fw-bold text-danger text-decoration-none ' to='/cart'>
                         <button type="button" className="btn position-relative">
-                            <i className="fas fa-shopping-cart fs-5 text-info"></i>
+                            <i className="fas fa-shopping-cart fs-5 text-1"></i>
                             <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
                                 {cart?.length}
                             </span>
@@ -60,9 +60,9 @@ const NavBar = ({ cart }) => {
                         </Nav>
                     </Navbar.Collapse>
                     <div className="d-none d-md-block ">
-                        <Link className='mx-3 mx-md-5 mt-3 fw-bold text-danger text-decoration-none' to='/cart'>
+                        <Link className='mx-3 mx-md-5 fw-bold text-danger text-decoration-none  align-items-center' to='/cart'>
                             <button type="button" className="btn position-relative">
-                                <i className="fas fa-shopping-cart fs-5 text-info"></i>
+                                <i className="fas fa-shopping-cart fs-5 text-1"></i>
                                 <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
                                     {cart?.length}
                                 </span>

@@ -7,9 +7,10 @@ const LocationAndTime = () => {
     var sec = new Date().getSeconds(); //To get the Current Seconds
     return (
         <Container className='mt-5' id="getUs">
-            <h2 className="fs-1 fw-bold mt-5 mb-4 text-info text-uppercase">Get Us</h2>
+            <h2 className="fs-1 fw-bold mt-5 text-1 mb-0 text-uppercase">Get Us</h2>
+            <p className='text-2 col-md-7 mx-auto mb-4 '>Modern Phanmacy BD offers products and services to help you lead a healthy, happy life. Visit our online pharmacy, shop now, or find a store near you.</p>
             <div className="row gx-4">
-                <div className="col-md-6  py-3 text-light" style={{ backgroundColor: '#396CF2' }}>
+                <div className="col-md-6  py-3 text-light bg-1">
                     <Table className=' text-light py-5 fw-bold'>
                         <thead>
                             <tr>
@@ -29,7 +30,7 @@ const LocationAndTime = () => {
                         </tbody>
                     </Table>
                 </div>
-                <div className="col-md-6 py-3 text-light" style={{ backgroundColor: '#4A5560' }}>
+                <div className="col-md-6 py-3 text-light bg-2">
                     <h5 className="fw-bold">Emergency Cases</h5>
                     <h2 className="dw-bold">+84 (051) 909 26 00</h2>
                     <p>For us, there are no minor aspects, because a quality result always epends on trifles. Over the years of our activities.</p>

@@ -22,25 +22,25 @@ const Signup = () => {
     }
     return (
         <Container className='mt-5' id='news'>
-            <h2 className="fs-1 fw-bold my-5 text-info text-uppercase">Sign Up</h2>
+            <h2 className="fs-1 fw-bold my-5 text-1 text-uppercase">Sign Up</h2>
             <div className="row flex-lg-row-reverse align-items-center g-5">
                 <div className="col-md-7">
                     <form className='col-md-7 mx-auto w-75' onSubmit={handleSubmit(onSubmit)}>
-                        <FloatingLabel controlId="floatingInput" label="Enter Your Name" className="mb-3 text-info">
-                            <Form.Control className='border-info text-info' type="text" placeholder="Enter Your Name"  {...register("businessName", { required: true })} />
+                        <FloatingLabel controlId="floatingInput" label="Enter Your Name" className="mb-3 text-1">
+                            <Form.Control className='border-1 text-1' type="text" placeholder="Enter Your Name"  {...register("businessName", { required: true })} />
                         </FloatingLabel>
-                        <FloatingLabel controlId="floatingInput" label="Enter Your Email" className="mb-3 text-info">
-                            <Form.Control className='border-info text-info' type="email" placeholder="Enter Your Email"  {...register("email", { required: true })} />
+                        <FloatingLabel controlId="floatingInput" label="Enter Your Email" className="mb-3 text-1">
+                            <Form.Control className='border-1 text-1' type="email" placeholder="Enter Your Email"  {...register("email", { required: true })} />
                         </FloatingLabel>
-                        <FloatingLabel controlId="floatingInput" label="Enter Your Password" className="mb-3 text-info">
-                            <Form.Control className='border-info text-info' type="password" placeholder="Enter Your Password"  {...register("password", { required: true })} />
+                        <FloatingLabel controlId="floatingInput" label="Enter Your Password" className="mb-3 text-1">
+                            <Form.Control className='border-1 text-1' type="password" placeholder="Enter Your Password"  {...register("password", { required: true })} />
                         </FloatingLabel>
                         <p className="text-danger py-1">{errorMsg}{errorMsg2}</p>
 
-                        <Button type="submit" className='px-5 button border-0 bg-info w-100 mb-3'><i className="fas fa-sign-in-alt me-3"></i>Sign Up</Button>
+                        <Button type="submit" className='px-5 button border-0 bg-1 w-100 mb-3'><i className="fas fa-sign-in-alt me-3"></i>Sign Up</Button>
 
                         <Link to='/login' className='text-decoration-none'>
-                            <Button className='px-5 button border-0 bg-info w-100 mb-3'><i className="far fa-question-circle me-3"></i>Already Have Account?</Button>
+                            <Button className='px-5 button border-0 bg-1 w-100 mb-3'><i className="far fa-question-circle me-3"></i>Already Have Account?</Button>
                         </Link>
                     </form>
                 </div>
@@ -49,7 +49,7 @@ const Signup = () => {
                 </div>
             </div>
             <Link to='/home' className='text-decoration-none text-light'>
-                <Button className='my-4 px-5 bg-info border-info'><i class="fas fa-arrow-circle-left me-3"></i>Back To Home</Button>
+                <Button className='my-4 px-5 bg-1 border-1'><i class="fas fa-arrow-circle-left me-3"></i>Back To Home</Button>
             </Link>
         </Container>
     );

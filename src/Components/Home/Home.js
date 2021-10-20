@@ -8,14 +8,15 @@ import Reviews from '../Reviews/Reviews';
 import bgImg from './bg-img.jpg'
 
 const Home = () => {
-    const bg = {
+   /*  const bg = {
         backgroundImage: `url(./${bgImg})`,
         backgroundAttachment: "fixed"
-    }
+    } */
     return (
 
-        <div style={bg}>
+        <div /* style={bg} */>
             <Banner></Banner>
+
             <Products></Products>
             <LocationAndTime></LocationAndTime>
             <OurTeam></OurTeam>

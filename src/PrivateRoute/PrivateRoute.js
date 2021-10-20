@@ -7,10 +7,14 @@ const PrivateRoute = ({ children, ...rest }) => {
     let { user, isLoading } = useAuth();
     if (isLoading) {
         return <>
-            {Array.from({ length: 5 }).map((_, idx) => (
-                <Spinner animation="border" variant="info" className='mx-2' />
-            ))}
+            <Spinner animation="border" className='mx-2 mt-5 text-1' />
+            <Spinner animation="border" className='mx-2 text-1' />
+            <Spinner animation="border" className='mx-2 text-1' />
+            <Spinner animation="border" className='mx-2 text-1' />
+            <Spinner animation="border" className='mx-2 text-1' />
+            <h2 className="fs-1 py-3 mb-5 fw-bold text-1">Loading</h2>
         </>
+
     }
     return (
         <Route

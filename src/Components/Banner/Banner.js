@@ -23,7 +23,7 @@ const Banner = () => {
                     <div className="col-lg-6 float-start text-start">
                         <h1 className="display-5 fw-bold lh-1 mb-3 text-1">Modern Pharma BD</h1>
                         <p className="lead">Bangladesh's most convenient online pharmacy, Bangladesh Pharmacy, is brought to you by the Dadha & Company – one of Bangladesh’s most trusted pharmacies, with over 100 years’ experience in dispensing quality medicines.</p>
-                        <div className="row row-cols-auto gx-4 py-3">
+                        <div className="row row-cols-auto gx-4 gy-2 py-3">
                             <HashLink className="col text-decoration-none text-light" smooth to="/#getUs">
                                 <Button className="bg-1  py-2 border-0 fw-bold px-5">Get Us  </Button>
                             </HashLink>

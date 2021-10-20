@@ -32,9 +32,11 @@ const useFirebase = () => {
                 setError(errorMessage);
             }).finally(() => setIsloading(false))
     }
-    const updateProfiles = (auth, displayName) => {
+    const updateProfiles = (auth, displayName, photoURL) => {
         setIsloading(true)
-        return updateProfile(auth.currentUser, displayName)
+        return updateProfile(auth.currentUser, {
+            displayName: displayName, photoURL: photoURL
+        })
             .catch((error) => {
                 // An error occurred
                 // ...

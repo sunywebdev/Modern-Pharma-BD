@@ -13,11 +13,11 @@ const Signup = () => {
     const errorMsg = error === 'Firebase: Error (auth/email-already-in-use).' ? 'You already have an account' : ''
     const errorMsg2 = error === 'Firebase: Password should be at least 6 characters (auth/weak-password).' ? 'Password must be 6 charactre' : ''
     const onSubmit = (data) => {
-        updateProfiles(auth, data.businessName)
+        updateProfiles(auth, data.displayName, data.photoURL)
         createNewUserUsingEmailPassword(auth, data.email, data.password)
             .then((user) => {
                 // eslint-disable-next-line no-lone-blocks
-                { user && history?.go(-2) }
+               
             })
     }
     return (
@@ -27,7 +27,10 @@ const Signup = () => {
                 <div className="col-md-7">
                     <form className='col-md-7 mx-auto w-75' onSubmit={handleSubmit(onSubmit)}>
                         <FloatingLabel controlId="floatingInput" label="Enter Your Name" className="mb-3 text-1">
-                            <Form.Control className='border-1 text-1' type="text" placeholder="Enter Your Name"  {...register("businessName", { required: true })} />
+                            <Form.Control className='border-1 text-1' type="text" placeholder="Enter Your Name"  {...register("displayName", { required: true })} />
+                        </FloatingLabel>
+                        <FloatingLabel controlId="floatingInput" label="Enter Photo URL" className="mb-3 text-1">
+                            <Form.Control className='border-1 text-1' type="text" placeholder="Enter Photo URL"  {...register("photoURL", { required: true })} />
                         </FloatingLabel>
                         <FloatingLabel controlId="floatingInput" label="Enter Your Email" className="mb-3 text-1">
                             <Form.Control className='border-1 text-1' type="email" placeholder="Enter Your Email"  {...register("email", { required: true })} />

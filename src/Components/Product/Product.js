@@ -9,12 +9,15 @@ const Product = (props) => {
     const { itemID } = useParams()
     const [items] = LoadDB()
     return (
-        <Container className='mt-2' id='products'>
+        <Container className='mt-5' id='products'>
             {items?.map(item => item?.id === itemID &&
                 <>
-                    <div className="row flex-lg-row-reverse align-items-center g-5">
+                    <div className="row flex-lg-row-reverse g-5">
+                        <div className="col-md-6">
+                            <img src={item?.photo} className="d-block mx-lg-auto img-fluid w-100" alt="" width="700" height="500" loading="lazy" />
+                        </div>
                         <div className="col-md-6 text-start">
-                            <h2 className="fs-1 fw-bold mt-5 mb-4 text-uppercase">{item?.name}</h2>
+                            <h2 className="fs-1 fw-boldtext-uppercase">{item?.name}</h2>
                             <p><Rating className='text-warning'
                                 emptySymbol="fa fa-star-o "
                                 fullSymbol="fa fa-star "
@@ -40,9 +43,8 @@ const Product = (props) => {
                                     props.addToCart(item)
                                 }} className="bg-danger bg-gradient border-danger px-5 rounded-pill">Add To Cart</Button>
                             </div>
-                        </div><div className="col-md-6">
-                            <img src={item?.photo} className="d-block mx-lg-auto img-fluid w-100" alt="" width="700" height="500" loading="lazy" />
                         </div>
+
                     </div>
                 </>
             )}

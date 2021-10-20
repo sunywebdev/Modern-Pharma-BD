@@ -23,15 +23,16 @@ const NavBar = ({ cart }) => {
                     <Navbar.Brand className='fw-bold text-1 me-0'>
                         <Link activeStyle={activeactiveStyle} style={navbar} exact to="/">M.PharmaBD</Link>
                     </Navbar.Brand>
-                    <Link className='d-block d-md-none mx-3 fw-bold text-danger text-decoration-none ' to='/cart'>
-                        <button type="button" className="btn position-relative">
-                            <i className="fas fa-shopping-cart fs-5 text-1"></i>
-                            <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                                {cart?.length}
-                            </span>
-                        </button>
-                    </Link>
-
+                    {user.email &&
+                        <Link className='d-block d-md-none mx-3 fw-bold text-danger text-decoration-none ' to='/cart'>
+                            <button type="button" className="btn position-relative">
+                                <i className="fas fa-shopping-cart fs-5 text-1"></i>
+                                <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                    {cart?.length}
+                                </span>
+                            </button>
+                        </Link>
+                    }
                     <Navbar.Toggle aria-controls="basic-navbar-nav">
                         {user.email && <>
                             {user?.photoURL ?
@@ -60,14 +61,16 @@ const NavBar = ({ cart }) => {
                         </Nav>
                     </Navbar.Collapse>
                     <div className="d-none d-md-block ">
-                        <Link className='mx-3 mx-md-5 fw-bold text-danger text-decoration-none  align-items-center' to='/cart'>
-                            <button type="button" className="btn position-relative">
-                                <i className="fas fa-shopping-cart fs-5 text-1"></i>
-                                <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                                    {cart?.length}
-                                </span>
-                            </button>
-                        </Link>
+                        {user.email &&
+                            <Link className='mx-3 mx-md-5 fw-bold text-danger text-decoration-none  align-items-center' to='/cart'>
+                                <button type="button" className="btn position-relative">
+                                    <i className="fas fa-shopping-cart fs-5 text-1"></i>
+                                    <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                        {cart?.length}
+                                    </span>
+                                </button>
+                            </Link>
+                        }
                         {user.email &&
                             <>
                                 <span className="fw-bold me-2">Welcome, {user?.displayName}</span>

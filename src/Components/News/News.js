@@ -19,7 +19,7 @@ const News = () => {
                                     <p><i className="fas fa-calendar-alt text-1"></i> &nbsp; {item?.time}</p>
                                     <Card.Title className='fw-bold text-1'>{item?.headline}</Card.Title>
                                     <Card.Text>
-                                        {item?.details.slice(0, 90)}...
+                                        {item?.details.slice(0, 100)}...
                                     </Card.Text>
                                     <Link to={`/news/${item?.id}`} className='float-start text-1 '>Read More +</Link>
                                 </Card.Body>

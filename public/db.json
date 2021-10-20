@@ -41,7 +41,7 @@
         "rating": 5,
         "fee": 2,
         "photo": "/photos/product04.webp",
-        "details": "NOT FOR HUMAN: Temperature readings from this devices are inanimate objects. The measured temperature for humans or animals will not be correct. Class 2 laser, optical power 0.5-0.9mW BETTER ACCURACY: 12:1 D:S, meaning it can accurately measure targets at greater distances compared to most others; For best accuracy, the distance between the thermometer and object of measurement should approximately be 14.17 inches (36 cm) TARGET QUICKER: Measure surface temperature ranging from -58℉ to 716℉(-50℃ to 380℃), you can choose the unit from ℉ to ℃; Response time: ≤500Ms; A built in laser gives you the precision to hone in on the exact space you want to measure ADDED FUNCTIONS: The LCD screen is backlit, also has an auto-off function to extend the battery life, and features a low battery indicator so you never accidentally run out of juice (battery included) VERSATILE DESIGN: Infrared technology makes it to measure the surface temperature of various objects especially temperatures above boiling points and below freezing points; Use it for cooking, ovens; AC, refrigerators; or soapmaking cats toy etc"
+        "details": "Temperature readings from this devices are inanimate objects. The measured temperature for humans or animals will not be correct. Class 2 laser, optical power 0.5-0.9mW BETTER ACCURACY: 12:1 D:S, meaning it can accurately measure targets at greater distances compared to most others; For best accuracy, the distance between the thermometer and object of measurement should approximately be 14.17 inches (36 cm) TARGET QUICKER: Measure surface temperature ranging from -58℉ to 716℉(-50℃ to 380℃), you can choose the unit from ℉ to ℃; Response time: ≤500Ms; A built in laser gives you the precision to hone in on the exact space you want to measure ADDED FUNCTIONS: The LCD screen is backlit, also has an auto-off function to extend the battery life, and features a low battery indicator so you never accidentally run out of juice (battery included) VERSATILE DESIGN: Infrared technology makes it to measure the surface temperature of various objects especially temperatures above boiling points and below freezing points; Use it for cooking, ovens; AC, refrigerators; or soapmaking cats toy etc"
     },
     {
         "section": "products",
@@ -52,7 +52,7 @@
         "rating": 5,
         "fee": 2,
         "photo": "/photos/product05.webp",
-        "details": "Care Instructions: Non Washable 3-PLY WITH ELECTROSTATICALLY CHARGED MELT-BLOWN FILTRATION: 3 layers provide >99% filtration efficiency against infected droplets and airborne particles including smoke, dust, pollution PREMIUM MATERIALS USED: All components of the mask are sourced from internationally certified suppliers and tested at our lab using state-of-the art German equipment MEETS HIGHEST INTERNATIONAL STANDARDS: Masks have been tested to meet all WHO recommended guidelines, and standards including N95, FFP2, IS 9473, US FDA, SITRA, and more UNIQUE SHAPE FOR IMPROVED BREATHABILITY: The shape has been inspired by masks worn in countries like Japan, and the fit makes it a more breathable mask that also looks stylish, while providing protection at N95/FFP2 standards PRODUCED IN AUTOMATED FACILITIES: Made in India and manufactured by Control Print, having a presence in 5 countries. We have been manufacturing hi-tech equipment for 29 years and are trusted partners to some of the largest brands in India"
+        "details": "Care Instructions: Non Washable 3-ply with 3 layers provide >99% filtration efficiency against infected droplets and airborne particles including smoke, dust, pollution PREMIUM MATERIALS USED: All components of the mask are sourced from internationally certified suppliers and tested at our lab using state-of-the art German equipment MEETS HIGHEST INTERNATIONAL STANDARDS: Masks have been tested to meet all WHO recommended guidelines, and standards including N95, FFP2, IS 9473, US FDA, SITRA, and more UNIQUE SHAPE FOR IMPROVED BREATHABILITY: The shape has been inspired by masks worn in countries like Japan, and the fit makes it a more breathable mask that also looks stylish, while providing protection at N95/FFP2 standards PRODUCED IN AUTOMATED FACILITIES: Made in India and manufactured by Control Print, having a presence in 5 countries. We have been manufacturing hi-tech equipment for 29 years and are trusted partners to some of the largest brands in India"
     },
     {
         "section": "products",
@@ -191,7 +191,7 @@
     {
         "section": "reviews",
         "id": "301",
-        "photo": "/photos/user4.jpg",
+        "photo": "/photos/user1.jpg",
         "name": "Seth R. Williams",
         "title": "Buyer",
         "details": "Everybody is friendly and does a good job. I've been using this pharmacy for 20 years and they have done excellent work since day 1! Keep up the good work!"

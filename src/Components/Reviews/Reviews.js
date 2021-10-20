@@ -55,8 +55,8 @@ const Reviews = () => {
             <Slider {...settings}>
                 {Array.from({ length: 1 }).map((_, idx) => (
                     items?.map(item => item?.section === 'reviews' &&
-                        <div className="mb-3 p-2 p-md-3">
-                            <div className=" bg-light p-4 border border-2 border-secondary shadow" style={{ borderRadius: '19px' }}>
+                        <div className="mb-3 p-2 p-md-3 ">
+                        <div className=" bg-light p-4 pCard border-0 " style={{ borderRadius: '19px' }}>
                                 <div className="d-flex justify-content-between align-items-center my-2">
                                     <div>
                                         <img src={item?.photo} alt="" className="rounded-circle border border-5 border-info" style={{ width: "95px" }} />

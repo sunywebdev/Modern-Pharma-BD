@@ -6,13 +6,13 @@ import LoadDB from '../../LoadDB/LoadDB';
 const News = () => {
     const [items] = LoadDB()
     return (
-        <Container className='mt-5' id='news'>
+        <Container className='py-5' id='news'>
             <h2 className="fs-1 fw-bold mt-5 mb-4 text-info text-uppercase">Latest News & Blog</h2>
             <Row xs={1} md={2} lg={3} className="g-4">
                 {Array.from({ length: 1 }).map((_, idx) => (
                     items?.map(item => item?.section === 'news' &&
                         <Col className='text-start'>
-                            <Card style={{ borderRadius: '19px' }} className='shadow bg-light'>
+                        <Card style={{ borderRadius: '19px' }} className='pCard border-0 bg-light'>
                                 <Card.Img variant="top" src={item?.photo} style={{ borderRadius: '19px 19px 0 0' }} />
                                 <Card.Body>
                                     <p><i className="fas fa-calendar-alt text-primary"></i> &nbsp; {item?.time}</p>

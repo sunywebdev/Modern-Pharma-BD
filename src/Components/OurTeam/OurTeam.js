@@ -11,7 +11,7 @@ const OurTeam = () => {
                 {Array.from({ length: 1 }).map((_, idx) => (
                     items?.map(item => item?.section === 'team' &&
                         <Col>
-                        <Card style={{ borderRadius: '19px' }} className='shadow bg-light'>
+                        <Card style={{ borderRadius: '19px' }} className='pCard border-0  bg-light'>
                             <Card.Img variant="top" src={item?.photo} style={{ borderRadius: '19px 19px 0 0' }}/>
                                 <Card.Body>
                                     <Card.Title>{item?.name}</Card.Title>

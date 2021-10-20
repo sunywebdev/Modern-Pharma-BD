@@ -28,7 +28,7 @@ const Cart = ({ cart, removeItem, subTotal, fee }) => {
                             <>
                                 {
                                     cart?.map(items =>
-                                        <Col key={items.id} className="my-3 " style={{ maxWidth: "420px", margin: "0 auto", backgroundColor: "#F5F5F5" }}>
+                                        <Col key={items?.id} className="my-3 " style={{ maxWidth: "420px", margin: "0 auto", backgroundColor: "#F5F5F5" }}>
                                             <ListGroup horizontal className=" text-start rounded">
                                                 <ListGroup.Item className="border-0" style={{ backgroundColor: "#F5F5F5" }}>
                                                     <img src={items?.photo} className="img-fluid rounded-start" alt="..." style={{ maxWidth: "100px" }} /></ListGroup.Item>
@@ -118,7 +118,7 @@ const Cart = ({ cart, removeItem, subTotal, fee }) => {
                     <>
                         <h2 className="my-5 fs-1 fw-bold text-1">Looks like You Didn't Added Anything In Your Cart</h2>
                         <Link to='/home' className='text-decoration-none text-light'>
-                            <Button className='my-4 px-5 bg-1 border-1'><i class="fas fa-arrow-circle-left me-3"></i>Back To Home</Button>
+                            <Button className='my-4 px-5 bg-1 border-1'><i className="fas fa-arrow-circle-left me-3"></i>Back To Home</Button>
                         </Link>
                     </>
             }

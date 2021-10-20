@@ -30,7 +30,7 @@ const Login = () => {
     return (
         <Container className='mt-5' id='news'>
             <h2 className="fs-1 fw-bold my-5 text-1 text-uppercase">Log In</h2>
-            <div className="row flex-lg-row-reverse align-items-center">
+            <div className="row flex-lg-row-reverse ">
                 <div className="col-md-5 text-start d-none d-lg-block">
                     <img src={image} alt="" className='w-100' />
                 </div>
@@ -53,7 +53,7 @@ const Login = () => {
                 </div>
             </div>
             <Link to='/home' className='text-decoration-none text-light'>
-                <Button className='my-4 px-5 bg-1 border-1'><i class="fas fa-arrow-circle-left me-3"></i>Back To Home</Button>
+                <Button className='my-4 px-5 bg-1 border-1'><i className="fas fa-arrow-circle-left me-3"></i>Back To Home</Button>
             </Link>
         </Container>
     );

@@ -30,7 +30,7 @@ const Signup = () => {
     return (
         <Container className='mt-5' id='news'>
             <h2 className="fs-1 fw-bold my-5 text-1 text-uppercase">Sign Up</h2>
-            <div className="row flex-lg-row-reverse align-items-center g-5">
+            <div className="row flex-lg-row-reverse g-5">
                 <div className="col-md-7">
                     <form className='col-md-7 mx-auto w-75' onSubmit={handleSubmit(onSubmit)}>
                         <FloatingLabel controlId="floatingInput" label="Enter Your Name" className="mb-3 text-1">
@@ -59,7 +59,7 @@ const Signup = () => {
                 </div>
             </div>
             <Link to='/home' className='text-decoration-none text-light'>
-                <Button className='my-4 px-5 bg-1 border-1'><i class="fas fa-arrow-circle-left me-3"></i>Back To Home</Button>
+                <Button className='my-4 px-5 bg-1 border-1'><i className="fas fa-arrow-circle-left me-3"></i>Back To Home</Button>
             </Link>
         </Container>
     );

@@ -25,7 +25,7 @@ const Product = (props) => {
                                 readonly
                             /> <span className='fw-bold'>({item?.rating} customer review)</span></p>
                             <h2 className='text-1 py-2'> <del className='text-danger'>$ {(item?.price) + (item?.price * 0.20)}</del>(-15%)  &nbsp; $ {item?.price}</h2>
-                            <p className="text-secondary mb-0">{item.details}</p>
+                            <p className="text-secondary mb-0">{item?.details}</p>
                             <h5 className="fw-bold py-2 text-danger">Only {item?.stock} in stock - Order Now!</h5>
                             <p>
                                 <i className="far fa-heart"></i> &nbsp; Add to Wishlist
@@ -48,8 +48,8 @@ const Product = (props) => {
                     </div>
                 </>
             )}
-            <Link to='/home' className='text-decoration-none text-light'>
-                <Button className='my-4 px-5 bg-1 border-1'><i class="fas fa-arrow-circle-left me-3"></i>Back To Home</Button>
+            <Link to='/allproducts' className='text-decoration-none text-light'>
+                <Button className='my-4 px-5 bg-1 border-1'><i className="fas fa-arrow-circle-left me-3"></i>Back To Product List</Button>
             </Link>
         </Container>
 

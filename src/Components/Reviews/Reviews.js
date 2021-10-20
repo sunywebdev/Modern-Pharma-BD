@@ -49,7 +49,7 @@ const Reviews = () => {
         ]
     };
     return (
-        <Container className='mt-5'>
+        <Container className='mt-5 overflow-hidden'>
             <h2 className="fs-1 fw-bold mt-5 text-1 mb-0 text-uppercase">What Our Client’s Say</h2>
             <p className='text-2 col-md-7 mx-auto mb-4 '>Get unbiased ratings and reviews for 9000+ products and services from Consumer Reports, plus trusted advice and in-depth reporting on what matters most.</p>
 

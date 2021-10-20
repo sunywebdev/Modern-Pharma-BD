@@ -18,6 +18,7 @@ import AuthProvider from './context/AuthProvider';
 import PrivateRoute from './PrivateRoute/PrivateRoute';
 import AboutUs from './Components/AboutUs/AboutUs';
 import CheckOut from './Components/CheckOut/CheckOut';
+import bgImg from './Components/bg-img.jpg'
 
 function App() {
   const [cart, setCart] = useState([])
@@ -43,8 +44,12 @@ function App() {
     const newCart = cart.filter(food => food.id !== foods.id)
     setCart(newCart)
   }
+  const bg = {
+    backgroundImage: `url(./${bgImg})`,
+    backgroundAttachment: "fixed"
+  }
   return (
-    <div className="App overflow-hidden">
+    <div className="App " style={bg}>
       <AuthProvider>
         <BrowserRouter>
           <NavBar

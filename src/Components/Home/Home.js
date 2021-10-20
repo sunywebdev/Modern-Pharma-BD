@@ -5,18 +5,13 @@ import News from '../News/News';
 import OurTeam from '../OurTeam/OurTeam';
 import Products from '../Products/Products';
 import Reviews from '../Reviews/Reviews';
-import bgImg from './bg-img.jpg'
 
 const Home = () => {
-   /*  const bg = {
-        backgroundImage: `url(./${bgImg})`,
-        backgroundAttachment: "fixed"
-    } */
+
     return (
 
-        <div /* style={bg} */>
+        <div>
             <Banner></Banner>
-
             <Products></Products>
             <LocationAndTime></LocationAndTime>
             <OurTeam></OurTeam>

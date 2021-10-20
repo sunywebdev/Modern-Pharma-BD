@@ -21,7 +21,7 @@ const News = () => {
                                     <Card.Text>
                                         {item?.details.slice(0, 90)}...
                                     </Card.Text>
-                                    <Link to={`/news/${item.id}`} className='float-start text-1 '>Read More +</Link>
+                                    <Link to={`/news/${item?.id}`} className='float-start text-1 '>Read More +</Link>
                                 </Card.Body>
 
                             </Card>

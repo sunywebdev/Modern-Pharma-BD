@@ -60,7 +60,7 @@ const Reviews = () => {
                             <div className=" bg-light p-4 pCard border-0 " style={{ borderRadius: '19px' }}>
                                 <div className="d-flex justify-content-between align-items-center my-2">
                                     <div>
-                                        <img src={item?.photo} alt="" className="rounded-circle border border-5 border-1" style={{ width: "95px" }} />
+                                        <img src={item?.photo} alt="" className="rounded-circle border border-5 border-11" style={{ width: "95px" }} />
                                     </div>
                                     <div className="rating">
                                         <Rating className='fs-5 text-warning'

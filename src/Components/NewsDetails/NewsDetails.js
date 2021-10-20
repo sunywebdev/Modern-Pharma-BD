@@ -25,7 +25,7 @@ const NewsDetails = () => {
 
             )}
             <Link to='/home' className='text-decoration-none text-light'>
-                <Button className='my-4 px-5 bg-1 border-1'><i className="fas fa-arrow-circle-left me-3"></i>Back To Home</Button>
+                <Button className='my-4 px-5 bg-1 border-11'><i className="fas fa-arrow-circle-left me-3"></i>Back To Home</Button>
             </Link>
         </Container>
     );

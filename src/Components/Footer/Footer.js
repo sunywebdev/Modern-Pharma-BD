@@ -26,7 +26,7 @@ const Footer = () => {
                     </div>
                 </div>
             </Container>
-            <hr className="border border-1 border-light" />
+            <hr className="border border-11 border-light" />
             <p className="my-0 text-light">Copyright &copy; 2021 All Rights Reserved by <strong>SUNY</strong> </p>
         </div>
     );

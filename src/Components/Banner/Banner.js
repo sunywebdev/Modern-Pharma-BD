@@ -18,7 +18,7 @@ const Banner = () => {
             <div className="container col-xxl-8 px-4">
                 <div className="row flex-lg-row-reverse align-items-center py-5 py-md-0">
                     <div className="col-10 col-sm-8 col-lg-6 d-none d-lg-block">
-                        <img src={img} className="d-block mx-lg-auto w-auto" alt="" loading="lazy" />
+                        <img src={img} className="d-block mx-lg-auto w-75" alt="" loading="lazy" />
                     </div>
                     <div className="col-lg-6 float-start text-start">
                         <h1 className="display-5 fw-bold lh-1 mb-3 text-1">Modern Pharma BD</h1>

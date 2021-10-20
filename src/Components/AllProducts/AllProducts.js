@@ -29,7 +29,7 @@ const AllProducts = () => {
                                     </Card.Text>
 
                                     <Link to={`/product/${item?.id}`} className='text-decoration-none text-light'>
-                                        <Button className='w-100 fw-bold bg-1 border-1 py-2' style={{ borderRadius: ' 0 0 19px 19px' }}>View More </Button>
+                                        <Button className='w-100 fw-bold bg-1 border-11 py-2' style={{ borderRadius: ' 0 0 19px 19px' }}>View More </Button>
                                     </Link>
                                 </Card.Body>
                             </Card>

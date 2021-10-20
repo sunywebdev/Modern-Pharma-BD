@@ -34,16 +34,16 @@ const Signup = () => {
                 <div className="col-md-7">
                     <form className='col-md-7 mx-auto w-75' onSubmit={handleSubmit(onSubmit)}>
                         <FloatingLabel controlId="floatingInput" label="Enter Your Name" className="mb-3 text-1">
-                            <Form.Control defaultValue={user?.displayName} className='border-1 text-1' type="text" placeholder="Enter Your Name"  {...register("displayName", { required: true })} />
+                            <Form.Control defaultValue={user?.displayName} className='border-11 text-1' type="text" placeholder="Enter Your Name"  {...register("displayName", { required: true })} />
                         </FloatingLabel>
-                        <FloatingLabel controlId="floatingInput" label="Enter Photo URL" className="mb-3 text-1">
-                            <Form.Control defaultValue={user?.photoURL} className='border-1 text-1' type="text" placeholder="Enter Photo URL"  {...register("photoURL", { required: true })} />
+                        <FloatingLabel controlId="floatingInput" label="Enter Photo URL (Optional)" className="mb-3 text-1">
+                            <Form.Control defaultValue={user?.photoURL} className='border-11 text-1' type="text" placeholder="Enter Photo URL"  {...register("photoURL", { required: false })} />
                         </FloatingLabel>
                         <FloatingLabel controlId="floatingInput" label="Enter Your Email" className="mb-3 text-1">
-                            <Form.Control defaultValue={user?.email} className='border-1 text-1' type="email" placeholder="Enter Your Email"  {...register("email", { required: true })} />
+                            <Form.Control defaultValue={user?.email} className='border-11 text-1' type="email" placeholder="Enter Your Email"  {...register("email", { required: true })} />
                         </FloatingLabel>
                         <FloatingLabel controlId="floatingInput" label="Enter Your Password" className="mb-3 text-1">
-                            <Form.Control defaultValue={user?.password} className='border-1 text-1' type="password" placeholder="Enter Your Password"  {...register("password", { required: true })} />
+                            <Form.Control defaultValue={user?.password} className='border-11 text-1' type="password" placeholder="Enter Your Password"  {...register("password", { required: true })} />
                         </FloatingLabel>
                         <p className="text-danger py-1">{errorMsg}{errorMsg2}</p>
 
@@ -59,7 +59,7 @@ const Signup = () => {
                 </div>
             </div>
             <Link to='/home' className='text-decoration-none text-light'>
-                <Button className='my-4 px-5 bg-1 border-1'><i className="fas fa-arrow-circle-left me-3"></i>Back To Home</Button>
+                <Button className='my-4 px-5 bg-1 border-11'><i className="fas fa-arrow-circle-left me-3"></i>Back To Home</Button>
             </Link>
         </Container>
     );

@@ -37,10 +37,10 @@ const Login = () => {
                 <div className="col-md-7">
                     <form className='col-md-7 mx-auto w-75' onSubmit={handleSubmit(onSubmit)}>
                         <FloatingLabel controlId="floatingInput" label="Enter Your Email" className="mb-3 text-1">
-                            <Form.Control className='border-1 text-1' type="email" placeholder="Enter Your Email"  {...register("email", { required: true })} />
+                            <Form.Control className='border-11 text-1' type="email" placeholder="Enter Your Email"  {...register("email", { required: true })} />
                         </FloatingLabel>
                         <FloatingLabel controlId="floatingInput" label="Enter Your Password" className="mb-3 text-1">
-                            <Form.Control className='border-1 text-1' type="password" placeholder="Enter Your Password"  {...register("password", { required: true })} />
+                            <Form.Control className='border-11 text-1' type="password" placeholder="Enter Your Password"  {...register("password", { required: true })} />
                         </FloatingLabel>
                         <p className="text-danger py-1">{errorMsg}{errorMsg2}</p>
                         <Button type="submit" className='px-5 button border-0 bg-1 w-100 mb-3'><i className="fas fa-sign-in-alt me-3"></i>Log In</Button>
@@ -53,7 +53,7 @@ const Login = () => {
                 </div>
             </div>
             <Link to='/home' className='text-decoration-none text-light'>
-                <Button className='my-4 px-5 bg-1 border-1'><i className="fas fa-arrow-circle-left me-3"></i>Back To Home</Button>
+                <Button className='my-4 px-5 bg-1 border-11'><i className="fas fa-arrow-circle-left me-3"></i>Back To Home</Button>
             </Link>
         </Container>
     );

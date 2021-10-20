@@ -41,7 +41,7 @@ const Product = (props) => {
                             <div className="d-grid gap-2 d-md-flex justify-content-md-start">
                                 <Button onClick={() => {
                                     props.addToCart(item)
-                                }} className="bg-1 border-1 px-5 rounded-pill">Add To Cart</Button>
+                                }} className="bg-1 border-11 px-5 rounded-pill">Add To Cart</Button>
                             </div>
                         </div>
 
@@ -49,7 +49,7 @@ const Product = (props) => {
                 </>
             )}
             <Link to='/allproducts' className='text-decoration-none text-light'>
-                <Button className='my-4 px-5 bg-1 border-1'><i className="fas fa-arrow-circle-left me-3"></i>Back To Product List</Button>
+                <Button className='my-4 px-5 bg-1 border-11'><i className="fas fa-arrow-circle-left me-3"></i>Back To Product List</Button>
             </Link>
         </Container>
 

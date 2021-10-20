@@ -19,17 +19,17 @@ const ContactUs = () => {
                 <div className="col-md-7">
                     <form className='col-md-7 mx-auto w-100' onSubmit={handleSubmit(onSubmit)}>
                         <FloatingLabel controlId="floatingInput" label="Business Name" className="mb-3 text-1">
-                            <Form.Control className='border-1 text-1' type="text" placeholder="Business Name"  {...register("businessName", { required: true })} />
+                            <Form.Control className='border-11 text-1' type="text" placeholder="Business Name"  {...register("businessName", { required: true })} />
                         </FloatingLabel>
                         <FloatingLabel controlId="floatingInput" label="Mobile Number" className="mb-3 text-1">
-                            <Form.Control className='border-1 text-1' type="text" placeholder="Mobile Number"  {...register("mobileNumber", { required: true })} />
+                            <Form.Control className='border-11 text-1' type="text" placeholder="Mobile Number"  {...register("mobileNumber", { required: true })} />
                         </FloatingLabel>
                         <FloatingLabel controlId="floatingInput" label="Email" className="mb-3 text-1">
-                            <Form.Control className='border-1 text-1' type="email" placeholder="Email"  {...register("email", { required: true })} />
+                            <Form.Control className='border-11 text-1' type="email" placeholder="Email"  {...register("email", { required: true })} />
                         </FloatingLabel>
                         <FloatingLabel controlId="floatingTextarea2" label="Leave your query here" className="mb-3 text-1">
                             <Form.Control
-                                className='border-1 text-1'
+                                className='border-11 text-1'
                                 as="textarea"
                                 placeholder="Leave your query here"
                                 style={{ height: '100px' }}
@@ -43,7 +43,7 @@ const ContactUs = () => {
 
                 </div>
                 <Link to='/home' className='text-decoration-none text-light'>
-                    <Button className='my-4 px-5 bg-1 border-1'><i className="fas fa-arrow-circle-left me-3"></i>Back To Home</Button>
+                    <Button className='my-4 px-5 bg-1 border-11'><i className="fas fa-arrow-circle-left me-3"></i>Back To Home</Button>
                 </Link>
             </div>
         </Container>

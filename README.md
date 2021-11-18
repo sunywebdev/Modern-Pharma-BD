@@ -1,6 +1,6 @@
 <h1>Modern Pharma BD</h1>
 
-This is a Pharmacy related Website.This site is hosted live <a href='https://modern-pharma-bd.web.app/'> Here</a>
+This is a Pharmacy related Website.This site is hosted live <a href='https://modern-pharma-bd.web.app/'> Here.</a>
 
 Features :-
 <ul>
